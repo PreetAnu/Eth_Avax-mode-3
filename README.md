@@ -46,19 +46,19 @@ contract METAtoken is ERC20, ERC20Burnable, Ownable {
 ### Compile the Code
 * Click on the "Solidity Compiler" tab in the left-hand sidebar.
 * Make sure the "Compiler" option is set to "0.8.20" (or another compatible version).
-* Click on the "Compile METAtoken.sol" button or use the shortcut key (Ctrl+s).
+* Click on the "Compile METAtoken.sol" button or use the shortcut key **(Ctrl+s)**.
   ### Deploy the Contract
   * Click on the "Deploy & Run Transactions" tab in the left-hand sidebar.
   * Select the "METAtoken" contract from the dropdown menu.
   * Enter the initial owner address in the constructor arguments.
-  * Click on the "Deploy" button and confirm the transaction in your Ethereum wallet (e.g., MetaMask).
+  * Click on the "Deploy" button and confirm the transaction in your Ethereum wallet (e.g., **MetaMask**).
  ### Interact with the Contract
-* Mint Tokens (Only Owner): Call the MintTokens function with the recipient address and the amount of tokens to mint.
-* Burn Tokens: Uncomment the BurnTokens function in the contract, compile and deploy it again, then call the BurnTokens function with the amount of tokens to burn.
-* Transfer Tokens: Uncomment the sendTokens function in the contract, compile and deploy it again, then call the sendTokens function with the recipient address and the amount of tokens to transfer.
-* Get Balance: Uncomment the getBalance function in the contract, compile and deploy it again, then call the getBalance function with the address to check the balance.
+* **Mint Tokens (Only Owner):** Call the MintTokens function with the recipient address and the amount of tokens to mint.
+* **Burn Tokens**: Uncomment the BurnTokens function in the contract, compile and deploy it again, then call the BurnTokens function with the amount of tokens to burn.
+* **Transfer Tokens:** Uncomment the sendTokens function in the contract, compile and deploy it again, then call the sendTokens function with the recipient address and the amount of tokens to transfer.
+* **Get Balance:** Uncomment the getBalance function in the contract, compile and deploy it again, then call the getBalance function with the address to check the balance.
 ## Author
-* Anupreet Kaur
+* ***Anupreet Kaur***
 * anupreetk159@gmail.com
 
 ## License
