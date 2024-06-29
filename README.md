@@ -20,6 +20,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 //the contract owner should be able to mint tokens to a provided address 
 //and any user should be able to burn and transfer tokens.
+
 contract METAtoken is ERC20, ERC20Burnable, Ownable {
     uint public totalTokenSupply;
 
@@ -27,21 +28,22 @@ contract METAtoken is ERC20, ERC20Burnable, Ownable {
         uint initialTokenSupply = 1000 * 10**18; // Initialize and declare the variable
         _mint(initialOwner, initialTokenSupply);  
     }
+    //Mint tokens 
     function MintTokens(address recipient, uint amount) public onlyOwner {
         _mint(recipient, amount);
         totalTokenSupply += amount;
     }
-/*
+    //burn token 
     function BurnTokens(uint amount) public {
         _burn(msg.sender, amount);
         totalTokenSupply -= amount;
     }
-
-    function sendTokens(address recipient, uint amount) public {
+    //transfer tokens..
+    function transferTokens(address recipient, uint amount) public {
         _transfer(msg.sender, recipient, amount);
     }
-*/
 }
+
 ```
 ### Compile the Code
 * Click on the "Solidity Compiler" tab in the left-hand sidebar.
