@@ -15,21 +15,18 @@ contract METAtoken is ERC20, ERC20Burnable, Ownable {
         uint initialTokenSupply = 1000 * 10**18; // Initialize and declare the variable
         _mint(initialOwner, initialTokenSupply);  
     }
+    //Mint tokens 
     function MintTokens(address recipient, uint amount) public onlyOwner {
         _mint(recipient, amount);
         totalTokenSupply += amount;
     }
-/*
-    // we can alsouse these functions but no need here
-    // because we already import some contract for these function's work.
+    //burn token
     function BurnTokens(uint amount) public {
         _burn(msg.sender, amount);
         totalTokenSupply -= amount;
     }
-
-    function sendTokens(address recipient, uint amount) public {
+     //transfer tokens..
+    function transferTokens(address recipient, uint amount) public {
         _transfer(msg.sender, recipient, amount);
     }
-    */
-
 }
